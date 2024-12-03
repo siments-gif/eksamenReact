@@ -4,9 +4,8 @@ export interface LoginCredentials {
 }
 
 export interface LoginResponse {
-    token: string;
+    _uuid: string,
     role: "admin" | "user";
-    userID: string;
 }
 
 export interface AuthState {
@@ -14,4 +13,5 @@ export interface AuthState {
     userRole: "admin" | "user" | null;
     userID: string | null;
     error: string | null;
+    isLoading: boolean;
 }
