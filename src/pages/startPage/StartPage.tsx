@@ -1,6 +1,7 @@
-import { useState } from "react"
-import LoginForm from "../../components/Forms/loginForm/LoginForm"
-import RegisterForm from "../../components/Forms/registerForm/RegisterForm"
+import { useState } from "react";
+import pageStyles from "../pageStyles.module.css";
+import LoginForm from "../../components/Forms/loginForm/LoginForm";
+import RegisterForm from "../../components/Forms/registerForm/RegisterForm";
 
 const StartPage = () => {
     const [selectedForm, setSelectedForm] = useState(null);
@@ -12,14 +13,14 @@ const StartPage = () => {
     const handleBack = () => {
         setSelectedForm(null)
     }
-
   return (
-    <section>
+    <section className={pageStyles.container}>
         {selectedForm === null ? (
             <div>
               <h1>Welcome to CV app</h1>
+              <b>You will need have an account to access features of application</b>
               <p>Please pick an option:</p>
-              <div>
+              <div className={pageStyles.redirectBtn}>
                 <button onClick={() => handleSelectForm("login")}>Login</button>
                 <button onClick={() => handleSelectForm("register")}>Register</button>
               </div>     
