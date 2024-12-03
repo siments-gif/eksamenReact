@@ -22,8 +22,6 @@ const LoginForm = () => {
             />
         </div>
     </form>
-    <div>
-    </div>
 </section>
   )
 }

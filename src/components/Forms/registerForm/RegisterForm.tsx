@@ -41,8 +41,6 @@ const RegisterForm = () => {
                 </select>
             </div>
         </form>
-        <div>
-        </div>
     </section>
   )
 }
