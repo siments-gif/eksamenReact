@@ -1,10 +1,10 @@
-import StartPage from './pages/startPage/StartPage';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
 
   return (
     <>
-     <StartPage />
+     <AppRoutes />
     </>
   )
 }

@@ -1,5 +1,3 @@
-import React from 'react'
-
 const LoginForm = () => {
   return (
     <section>
@@ -24,6 +22,8 @@ const LoginForm = () => {
             />
         </div>
     </form>
+    <div>
+    </div>
 </section>
   )
 }
